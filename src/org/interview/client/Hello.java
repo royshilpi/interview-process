@@ -40,6 +40,10 @@ public class Hello implements EntryPoint {
 	 * UI WT 
 	 */
 	final Button sendButton = new Button("Send");
+    btnsave.CssClass = "Input";	
+    .Input { 
+    color: red;
+    }
     final TextBox nameField = new TextBox();
     final Label errorLabel = new Label();
     final DialogBox dialogBox = new DialogBox();
