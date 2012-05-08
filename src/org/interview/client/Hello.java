@@ -40,6 +40,13 @@ public class Hello implements EntryPoint {
 	 * UI WT 
 	 */
 	final Button sendButton = new Button("Send");
+	.FW_Buttons {
+         border-radius: 3px; 
+         background-color: #CD0000;  
+         
+	}
+
+	sendButton.addClass("FW_Buttons");
     final TextBox nameField = new TextBox();
     final Label errorLabel = new Label();
     final DialogBox dialogBox = new DialogBox();
