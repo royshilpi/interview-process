@@ -66,6 +66,16 @@ public class Hello implements EntryPoint {
     final Button getPersonButton = new Button("Get person information");
     final Button clearPersonButton = new Button("Clear person information");
     
+    // Add a handler to clear the clearPersonButton TextBox
+        clearPersonButton.addClickHandler(new ClickHandler() {
+            public void onClick(ClickEvent event) {
+                
+                
+                nameField.value = "";
+            }
+        });
+        
+    
     final Label personLabelName = new Label("Name");
     final Label personLabelId = new Label("Id");
 
